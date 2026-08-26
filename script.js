@@ -22,13 +22,13 @@ function sortTable(n) {
             /*check if the two rows should switch place,
             based on the direction, asc or desc:*/
             if (dir == "asc") {
-                if ((x.dataset.sortvalue || x.textContent.toLowerCase()) > (y.dataset.sortvalue || y.textContent.toLowerCase())) {
+                if ((x.dataset.sortvalue.toLowerCase() || x.textContent.toLowerCase()) > (y.dataset.sortvalue.toLowerCase() || y.textContent.toLowerCase())) {
                     //if so, mark as a switch and break the loop:
                     shouldSwitch = true;
                     break;
                 }
             } else if (dir == "desc") {
-                if ((x.dataset.sortvalue || x.textContent.toLowerCase()) < (y.dataset.sortvalue || y.textContent.toLowerCase())) {
+                if ((x.dataset.sortvalue.toLowerCase() || x.textContent.toLowerCase()) < (y.dataset.sortvalue.toLowerCase() || y.textContent.toLowerCase())) {
                     //if so, mark as a switch and break the loop:
                     shouldSwitch = true;
                     break;
